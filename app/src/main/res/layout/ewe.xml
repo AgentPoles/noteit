@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<!--<LinearLayout
+		android:id="@+id/laa"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">-->
+		<TextView
+			android:textColor="#4faf2f"
+			android:text="File Settings"/>
+			<TextView
+				android:textColor="#000000"
+				android:text="Security"/>
+				<TextView
+					android:textColor="#1f7cff"
+					android:text="secure your files"/>
+				<CheckBox
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="secure!"
+					android:visibility="gone"/>
+				<EditText
+					android:layout_height="50dp"
+					android:layout_width="fill_parent"
+					android:textColor="#fefede"
+					android:text="Enter password"
+					android:visibility="gone"/>
+		<EditText
+			android:layout_height="50dp"
+			android:layout_width="fill_parent"
+			android:textColor="#fefede"
+			android:text="Re-Enter password"
+			android:visibility="gone"/>
+		
+					
+<!--</LinearLayout>
+					
+	<LinearLayout
+		android:layout_marginTop="5dp"
+		android:id="@+id/laa"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+	<TextView
+		android:textColor="#000000"
+		android:text="Storage"/>
+	<TextView
+		android:textColor="#1f7cff"
+		android:text="not necessary for secured files"/>
+</LinearLayout>-->
+				
+		
+    
+</LinearLayout>

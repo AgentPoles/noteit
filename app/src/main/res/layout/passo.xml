@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/bersb"
+			android:visibility="gone"/>
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/beresb"
+			android:visibility="gone"/>
+		<TextView
+			android:background="#ffffff"
+			android:id="@+id/bjb"
+			android:text=" You have not selected an extension for your file. If you decide to proceed, The poles Framework would save it as a basic text file"
+			android:textColor="#1ED7E8"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+		/>
+		<ImageView
+			android:layout_width="40dp"
+			android:layout_height ="40dp"
+			android:background="#ffffff"
+			android:src="@drawable/the"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#1ED7E8"
+	>
+
+		<Button
+			android:id="@+id/bifib"
+			android:layout_marginLeft="40dp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#1ED7E8"
+			android:textColor="#ffffff"
+			android:text="select file extension"/>
+		<Button
+			android:id="@+id/biprob"
+			android:layout_marginLeft="20dp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#1ED7E8"
+			android:textColor="#ffffff"
+			android:text="proceed"/>
+	</LinearLayout>
+</LinearLayout>

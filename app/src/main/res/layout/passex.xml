@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/lki"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/bersc"
+			android:visibility="gone"/>
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/beresc"
+			android:visibility="gone"/>
+		<TextView
+			android:background="#ffffff"
+			android:id="@+id/bjc"
+			android:text=" You have neither selected an extension for your file nor secured it. If you decide to proceed, The poles Framework would save it as a basic text file accessible to all users of this device"
+			android:textColor="#1ED7E8"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+		/>
+		<ImageView
+			android:layout_alignBottom="@+id/lki"
+			android:layout_alignParentEnd="true"
+			android:layout_width="40dp"
+			android:layout_height ="40dp"
+			android:background="#ffffff"
+			android:src="@drawable/the"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#1ED7E8"
+	>
+
+		<Button
+			android:layout_marginLeft="10dp"
+			android:id="@+id/bific"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#1ED7E8"
+			android:textColor="#ffffff"
+			android:text=" file extension"/>
+		<Button
+			android:id="@+id/bifoc"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#1ED7E8"
+			android:textColor="#ffffff"
+			android:text=" file setting"/>
+		<Button
+			android:id="@+id/biproc"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="#1ED7E8"
+			android:textColor="#ffffff"
+			android:text="proceed"/>
+	</LinearLayout>
+</LinearLayout>

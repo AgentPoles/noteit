@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.myapp.noteit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-configuration android:reqKeyboardType="qwerty" />
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="com.mycompany.myapp.noteit.PhonesReceiver" >
+            - 
+            <intent-filter android:priority="299" >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.mycompany.myapp.noteit.MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mycompany.myapp.noteit.MyActivity"
+            android:label="Calling" >
+            - 
+            <intent-filter>
+                <action android:name="com.mycompany.myapp.noteit.MyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        - 
+        <activity
+            android:name="com.mycompany.myapp.noteit.myPreferenceActivity"
+            android:label="manage" >
+        - 
+            <intent-filter>
+                <action android:name="com.mycompany.myapp.noteit.myPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        - 
+        <activity
+            android:name="com.mycompany.myapp.noteit.Files"
+            android:label="Calling" >
+        - 
+            <intent-filter>
+                <action android:name="com.mycompany.myapp.noteit.Files" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

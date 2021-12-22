@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+	android:orientation="vertical"> 
+<FrameLayout
+	android:id="@+id/framea"
+	android:layout_height="match_parent"
+	android:layout_width="fill_parent"/>
+<FrameLayout
+	android:id="@+id/frameb"
+	android:layout_height="match_parent"
+	android:layout_width="fill_parent"/>
+</LinearLayout>

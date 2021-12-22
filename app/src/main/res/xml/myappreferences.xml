@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PreferenceScreen
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<PreferenceCategory
+			android:title="File Settings">
+			<PreferenceScreen
+				android:title="Security"
+				android:summary="secure your files"
+				android:key="securityHome">
+				<CheckBoxPreference
+					android:title="Secure file"
+					android:summary="your files would be saved in a secured location and can only be accessed using a PASSWORD"
+			        android:defaultValue="false"
+					android:key="checksec"/>
+				<EditTextPreference
+					android:title="Set PassWord"
+					android:summary="you can use a single password for all secured files; just an advice!"
+					android:defaultValue=""
+					android:key="keysec"/>
+				<EditTextPreference
+					android:title="Re-enter PassWord"
+					android:summary="just to be sure"
+					android:defaultValue=""
+					android:key="keysecb"/>
+			</PreferenceScreen>
+			<PreferenceScreen
+				android:title="Storage"
+				android:summary="this is not neccessary for secured files"
+				android:defaultValue=""
+				android:key="storagehome">
+				<EditTextPreference
+					android:title="Enter desired Storage path"
+					android:defaultValue=""
+					android:key="storageloc"/>
+				<PreferenceScreen
+					android:title ="Select Storage location"
+					android:key="selstoragekey"/>
+			</PreferenceScreen>
+		</PreferenceCategory>
+			<PreferenceCategory
+				android:title="Reminder Settings">
+				<PreferenceScreen
+					android:title="Privacy"
+					android:summary="Privatize reminder"
+					android:key="remSecurity">
+					<CheckBoxPreference
+						android:title="ensure privacy"
+						android:summary="your files would be saved in a secured location and can only be accessed using a PASSWORD"
+						android:defaultValue="false"
+						android:key="checkpri"/>
+					<EditTextPreference
+						android:title="Set PassWord"
+						android:summary="you can use a single password for all privatized reminders; just an advice!"
+						android:defaultValue=""
+						android:key="keypri"/>
+					<EditTextPreference
+						android:title="Re-enter PassWord"
+						android:summary="just to be sure"
+						android:defaultValue=""
+						android:key="keysec"/>
+				</PreferenceScreen>
+				<RingtonePreference
+					android:title="Reminder tone"
+					android:summary="Select reminder tone"
+					android:key="remkey"/>
+			</PreferenceCategory>
+	</PreferenceScreen>
+
+					
